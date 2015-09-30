@@ -1,4 +1,6 @@
 /* 
+ * Register_Addresses_Definitions.h
+ * 
  * Register addresses
  * 	The addresses are all defined as:
  * 		#define REGISTER_<name-of-register> <hex-of-address>
