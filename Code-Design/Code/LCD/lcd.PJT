@@ -1,0 +1,39 @@
+[PROJECT]
+Target=lcd.HEX
+Development_Mode=2
+Processor=0x4520
+ToolSuite=CCS
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=lcd.c;
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
+
+[lcd.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=H:\ELECTR~1\Classes\MICROC~1\Code\LCD\lcd.c
+
+[Windows]
+0=0000 H:\ELECTR~1\Classes\MICROC~1\Code\LCD\lcd.c 0 0 796 451 3 0
+
+[Opened Files]
+1=H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\LCD\lcd.c
+2=
+3=H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\Library\Analog.h
+4=H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\Library\GPIO.h
+5=H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\Library\Interrupts.h
+6=

@@ -1,0 +1,130 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017-018 TRISA
+019-01A TRISB
+01B-01C TRISC
+01D-01E PORTA
+01F-020 PORTB
+021-022 PORTC
+023-024 ADRESH
+025-026 ADRESL
+027-028 ADCON0
+029-02A ADCON1
+02B-02C ADCON2
+02D-02E INTCON0
+02F-030 INTCON1
+031-032 INTCON2
+033-034 PIE1
+035-038 Vres
+039-03C Voltage
+03D     lcd_init.i
+03D-040 @PRINTF_F_474.P1
+03D     main.@SCRATCH
+03E     lcd_init.@SCRATCH
+03E     main.@SCRATCH
+041-044 @PRINTF_F_474.P1
+045     @PRINTF_F_474.@SCRATCH
+046     @PRINTF_F_474.@SCRATCH
+047     @PRINTF_F_474.@SCRATCH
+048     @PRINTF_F_474.@SCRATCH
+049     @PRINTF_F_474.@SCRATCH
+04A     @PRINTF_F_474.@SCRATCH
+04B     @PRINTF_F_474.@SCRATCH
+04C     @PRINTF_F_474.@SCRATCH
+04D     @PRINTF_F_474.@SCRATCH
+04E     @PRINTF_F_474.@SCRATCH
+04F     lcd_putc.c
+050     lcd_gotoxy.x
+050     @delay_ms1.P1
+051     lcd_gotoxy.y
+052     lcd_gotoxy.address
+053     lcd_gotoxy.@SCRATCH
+054     lcd_send_byte.address
+055     lcd_send_byte.n
+056     lcd_read_byte.low
+056     lcd_send_byte.@SCRATCH
+057     lcd_send_nibble.n
+057     lcd_read_byte.high
+058     lcd_read_byte.@SCRATCH
+059     int_ad_isr.@SCRATCH
+05A     int_ad_isr.@SCRATCH
+05B-05C @ITOF.P1
+05B-05E @MULFF.P2
+05F-062 @MULFF.P1
+063     @MULFF.@SCRATCH
+064     @MULFF.@SCRATCH
+065     @MULFF.@SCRATCH
+F83     lcd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB-FBC CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE-FBF CCP_1
+FBF     CCP_1_HIGH
+
+025E  @delay_ms1
+0096  @const104
+02A2  lcd_read_byte
+0284  lcd_send_nibble
+02E2  lcd_send_byte
+031A  lcd_init
+0356  lcd_gotoxy
+037C  lcd_putc
+0206  int_ad_isr
+00D6  @ITOF
+0110  @MULFF
+0690  main
+00B4  @const10101
+03BE  @PRINTF_F_474
+0690  @cinit
+
+Project Files:
+    H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\LCD\lcd_1.c
+    C:\Program Files (x86)\PICC\devices\18f4520.h
+    H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\Library\18f4520ptr.h
+    H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\library\GPIO.h
+    H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\library\Analog.h
+    H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\library\Interrupts.h
+    H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\library\PeripheralInterrupts.h
+    H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\library\modifiedlcd.h
+
+Compiler Settings:
+    Processor:      PIC18F4520
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\LCD\lcd_1.err
+    INHX32:      H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\LCD\lcd_1.HEX
+    Symbols:     H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\LCD\lcd_1.SYM
+    List:        H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\LCD\lcd_1.LST
+    Debug/COFF:  H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\LCD\lcd_1.cof
+    Call Tree:   H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\LCD\lcd_1.tre
+    Statistics:  H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\LCD\lcd_1.sta

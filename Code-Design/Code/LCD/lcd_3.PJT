@@ -1,0 +1,41 @@
+[PROJECT]
+Target=lcd_3.HEX
+Development_Mode=2
+Processor=0x4520
+ToolSuite=CCS
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=lcd_3.c;
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
+
+[lcd_3.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=H:\ELECTR~1\Classes\PROGRA~1\MICROC~1\Code\LCD\lcd_3.c
+
+[Windows]
+0=0000 H:\ELECTR~1\Classes\PROGRA~1\MICROC~1\Code\LCD\lcd_3.c 0 0 796 451 3 0
+
+[Opened Files]
+1=H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Code\LCD\lcd_3.c
+2=H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Code\Library\18f4520ptr.h
+3=H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Code\Library\Analog.h
+4=H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Code\Library\PeripheralInterrupts.h
+5=H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Code\Library\modifiedlcd.h
+6=H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Code\Library\Interrupts.h
+7=H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Code\Library\GPIO.h
+8=
