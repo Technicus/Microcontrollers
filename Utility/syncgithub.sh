@@ -2,5 +2,5 @@
 
 cd ..
 git add .
-git commit -m 'syncronise with github'
+git commit -m 'synchronize with github'
 git push origin master
