@@ -1,4 +1,0 @@
-Error[18]   H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\BlinkTest\blinktest.c 5 : File can not be opened
-    Not in local "H:\Electrical Engineering Technology\Classes\Microcontrollers\Code\BlinkTest\18F4520ptr.h"
-    Not in "C:\Program Files (x86)\PICC\devices\18F4520ptr.h"
-    Not in "C:\Program Files (x86)\PICC\drivers\18F4520ptr.h"
