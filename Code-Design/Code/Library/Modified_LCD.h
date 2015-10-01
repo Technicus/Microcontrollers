@@ -39,6 +39,16 @@
 // Un-comment the following define to use port B
 #define use_portb_lcd FALSE
 
+// Function declerations
+char lcd_getc( BYTE x, BYTE y);
+void lcd_putc( char c);
+void lcd_gotoxy( BYTE x, BYTE y);
+void lcd_init();
+void lcd_send_byte( BYTE address, BYTE n );
+void lcd_send_nibble( BYTE n );
+BYTE lcd_read_byte();
+
+
 
 struct lcd_pin_map {                 // This structure is overlayed
            BOOLEAN enable;           // on to an I/O port to gain

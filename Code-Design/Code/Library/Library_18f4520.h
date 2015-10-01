@@ -16,7 +16,6 @@
 
 // Structures for interrupt curcuits
 #include "../library/Interrupts.h"
-#include "../library/Peripheral_Interrupts.h"
 
 // Custom libraries for keypad and LCD connections
 #include "../library/Keypad_Connection.h"
