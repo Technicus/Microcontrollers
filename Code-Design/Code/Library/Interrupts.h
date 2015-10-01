@@ -57,4 +57,4 @@ struct PIE_1{
 	int ADIE:1;
 	int PSPIE:1;
 	};
-struct PIE_1 *PIE1 = REGISTER_INTCON;
+struct PIE_1 *PIE1 = REGISTER_PIE1;
