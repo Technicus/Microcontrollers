@@ -22,3 +22,4 @@ http://www.circuitstoday.com/circuit-design-and-simulation-softwares
 
 https://ashwith.wordpress.com/2010/09/10/circuit-simulation-in-gnulinux-lets-begin/
 
+http://www.ibm.com/developerworks/library/l-bash-parameters/
