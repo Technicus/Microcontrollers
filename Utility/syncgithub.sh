@@ -1,10 +1,11 @@
 #!/bin/bash
 
 push(){
+  commit_message="$@"
   cd ..
   git add .
   # echo "git commit -m $@"     # test commit message
-  git commit -m '$@'
+  git commit -m "$commit_message"
   git push origin master
   echo
   exit 1
