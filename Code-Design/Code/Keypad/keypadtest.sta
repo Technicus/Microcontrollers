@@ -1,0 +1,42 @@
+
+ROM used: 924 (3%)
+          924 (3%) including unused fragments
+
+          1 Average locations per line
+          9 Average locations per statement
+
+RAM used: 58 (4%) at main() level
+          66 (4%) worst case
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   72    12  12  E:\Microcontrollers\Code-Design\Code\Keypad\keypadtest.c
+  305     0   0  C:\Program Files (x86)\PICC\devices\18f452.h
+   26     0   0  E:\Microcontrollers\Code-Design\Code\Library\Library_18f4520.h
+  194     0   0  E:\Microcontrollers\Code-Design\Code\library\Register_Addresses_Definitions.h
+   24     0   0  E:\Microcontrollers\Code-Design\Code\library\TRIS_PORT_LAT.h
+   37     0   0  E:\Microcontrollers\Code-Design\Code\library\Analog_To_Digital.h
+   61     0   0  E:\Microcontrollers\Code-Design\Code\library\Interrupts.h
+   86    31  27  E:\Microcontrollers\Code-Design\Code\library\Keypad_Connection.h
+  195    61  41  E:\Microcontrollers\Code-Design\Code\library\Modified_LCD.h
+----- -----
+ 2000   208 Total
+
+Page ROM  %  RAM  Functions:
+---- --- --- ---  ----------
+0     38   2   1  @delay_ms1
+0    234  13   3  keyPress
+0     20   1   0  @const133
+0     72   4   3  lcd_read_byte
+0     30   2   1  lcd_send_nibble
+0     56   3   3  lcd_send_byte
+0     60   3   2  lcd_init
+0     38   2   4  lcd_gotoxy
+0     66   4   1  lcd_putc
+0    306  17   3  main
+
+ Segment   Used  Free
+---------  ----  ----
+00000-00002     4  0
+00004-07FFE   920  31844
+

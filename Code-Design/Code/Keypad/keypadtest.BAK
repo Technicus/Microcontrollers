@@ -3,7 +3,7 @@
    ../../designs/LCDpanel_1.design
 */
 
-#include <18f452.h>
+#include <18f4520.h>
 #use delay (clock = 200000000)
 #fuses HS, NOWDT, NOLvP
 #include "../Library/Library_18f4520.h"
@@ -52,14 +52,14 @@ main(){
 
    };
    */
-
+   
    char press;
    lcd_init();
    *TRISB = 0xF0;
    *TRISC = 0x00;
    ADCON1->PCFGx = 0x0F;
    INTCON2->RBPU = 0;
-
+   
    while(1){
       press = keyPress();
       if( press != '@'){
