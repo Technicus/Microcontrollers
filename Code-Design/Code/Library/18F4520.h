@@ -11,6 +11,9 @@
 //////// Fuses: CCP2C1,CCP2B3,NOSTVREN,STVREN,NODEBUG,DEBUG,NOLVP,LVP,WRT
 //////// Fuses: NOWRT,NOWRTD,WRTD,NOWRTB,WRTB,WRTC,NOWRTC,CPD,NOCPD,CPB
 //////// Fuses: NOCPB,EBTR,NOEBTR,EBTRB,NOEBTRB
+
+
+
 //////// 
 ////////////////////////////////////////////////////////////////// I/O
 // Discrete I/O Functions: SET_TRIS_x(), OUTPUT_x(), INPUT_x(),
