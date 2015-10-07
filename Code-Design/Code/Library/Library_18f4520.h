@@ -6,7 +6,7 @@
 
 // Included for compiler
 // #include <18f452.h> // Different compiler
-// #include <18f4520.h> // Class compiler
+// #include <18f4520.h> // Class compiler 
 #include "../library/18f4520.h"
 
 // Set lock bits and fuses

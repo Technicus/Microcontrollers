@@ -2,7 +2,7 @@
 #device PIC18F452
 #nolist
 //////// Program memory: 16384x16  Data RAM: 1536  Stack: 31
-//////// I/O: 34   Analog Pins: 8
+//////// I/O: 34   Analog Pins: 8 
 //////// Data EEPROM: 256
 //////// C Scratch area: 00   ID Location: 2000
 //////// Fuses: LP,XT,HS,RC,EC,EC_IO,H4,RC_IO,PROTECT,NOPROTECT,OSCSEN
