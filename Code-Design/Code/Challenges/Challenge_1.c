@@ -72,7 +72,7 @@ main(){
       ananlogKeyNumber = ananlogKeyDifference(percentVoltageRange, keypadNumber_1);
     }
 
-    printf(lcd_putc, "\fV:%03.4fV KP:%c\nP:%d%%\tS:%d\tN:%d", Voltage, press, percentVoltageRange, ananlogKeyNumber, keypadNumber_1);
+    printf(lcd_putc, "\fV:%03.4fV KP:%c\nP:%d%%\tD:%d\tN:%d", Voltage, press, percentVoltageRange, ananlogKeyNumber, keypadNumber_1);
 
     delay_ms(20);
   }
