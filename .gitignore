@@ -1,0 +1,12 @@
+*.BAK
+*.bak
+*.DBK
+*.PWI
+*.kate*
+*.cof
+*.err
+*.LST
+*.PJT
+*.sta
+*.SYM
+*.tre
