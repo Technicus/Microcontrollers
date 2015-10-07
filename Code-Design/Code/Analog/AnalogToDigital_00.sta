@@ -1,0 +1,49 @@
+
+ROM used: 2756 (8%)
+          2756 (8%) including unused fragments
+
+          3 Average locations per line
+          25 Average locations per statement
+
+RAM used: 83 (5%) at main() level
+          133 (9%) worst case
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   50    18  16  H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Microcontrollers-master\Microcontrollers-master\Code-Design\Code\Analog\AnalogToDigital_00.c
+   32     0   0  H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Microcontrollers-master\Microcontrollers-master\Code-Design\Code\Library\Library_18f4520.h
+  412     0   0  C:\Program Files (x86)\PICC\devices\18f4520.h
+    4     0   0  H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Microcontrollers-master\Microcontrollers-master\Code-Design\Code\library\FusesLockBits.h
+  194     0   0  H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Microcontrollers-master\Microcontrollers-master\Code-Design\Code\library\Register_Addresses_Definitions.h
+   24     0   0  H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Microcontrollers-master\Microcontrollers-master\Code-Design\Code\library\TRIS_PORT_LAT.h
+   37     0   0  H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Microcontrollers-master\Microcontrollers-master\Code-Design\Code\library\Analog_To_Digital.h
+   61     0   0  H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Microcontrollers-master\Microcontrollers-master\Code-Design\Code\library\Interrupts.h
+   89    31  24  H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Microcontrollers-master\Microcontrollers-master\Code-Design\Code\library\Keypad_Connection.h
+  195    61  38  H:\Electrical Engineering Technology\Classes\Programming\Microcontrollers\Microcontrollers-master\Microcontrollers-master\Code-Design\Code\library\Modified_LCD.h
+----- -----
+ 2196   220 Total
+
+Page ROM  %  RAM  Functions:
+---- --- --- ---  ----------
+0     38   1   1  @delay_ms1
+0     30   1   0  @const135
+0     64   1   3  lcd_read_byte
+0     30   1   1  lcd_send_nibble
+0     56   1   3  lcd_send_byte
+0     60   1   2  lcd_init
+0     38   1   4  lcd_gotoxy
+0     66   1   1  lcd_putc
+0    152   3   8  int_ad_isr
+0     58   1   2  @ITOF
+0    246   4  11  @MULFF
+0    626  11  16  @ADDFF
+0    424   8   2  main
+0    722  13  18  @PRINTF_F_601
+
+ Segment   Used  Free
+---------  ----  ----
+00000-00002     4  0
+00004-00006     0  4
+00008-00094   142  0
+00096-07FFE  2610  30008
+

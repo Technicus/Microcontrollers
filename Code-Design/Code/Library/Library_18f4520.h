@@ -4,6 +4,12 @@
  *
  */
 
+// Included for compiler
+// #include <18f452.h> // Different compiler
+#include <18f4520.h> // Class compiler
+
+// Set lock bits and fuses
+#include "../library/FusesLockBits.h"
 
 // All register addresses are defined as: #define REGISTER_<name-of-register> <hex-of-address>
 #include "../library/Register_Addresses_Definitions.h"

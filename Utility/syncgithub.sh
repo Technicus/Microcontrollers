@@ -14,7 +14,7 @@ push(){
 checkParameters(){
   if [[ "$1" < "1" ]]
   then
-    echo "      Usage:"
+    echo "      Usage:	syncgithub.sh <commit missage>"
     echo "              Be sure to include a commit message!"
     echo
     exit 1
