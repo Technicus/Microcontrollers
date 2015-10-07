@@ -1,6 +1,7 @@
 /* Initial lcd test
  *   2015-.09.24
  *   ../../designs/LCDpanel_1.design
+ * 
  */
 
 #include "../Library/Library_18f4520.h"

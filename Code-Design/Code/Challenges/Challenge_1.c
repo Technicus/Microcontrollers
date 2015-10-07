@@ -80,6 +80,7 @@ main(){
 
 // Function definitions
 
+// Calculate analog percentage
 unsigned int analogPercentage(float analogValue){
   return(((analogValue+3)/voltageRange)*100);
 }
@@ -102,6 +103,7 @@ unsigned int keypadNumberUpdate(char press, unsigned int keypadNumber_0){
   }
 }
 
+// Calculate difference
 unsigned int ananlogKeyDifference(unsigned int percentVoltageRange, unsigned int keypadNumber_2){
   unsigned int ananlogKeyNumber = 0;
   if (percentVoltageRange > keypadNumber_2){
