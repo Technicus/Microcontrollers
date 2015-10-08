@@ -2,7 +2,7 @@
 #device PIC18F452
 #nolist
 //////// Program memory: 16384x16  Data RAM: 1536  Stack: 31
-//////// I/O: 34   Analog Pins: 8 
+//////// I/O: 34   Analog Pins: 8
 //////// Data EEPROM: 256
 //////// C Scratch area: 00   ID Location: 2000
 //////// Fuses: LP,XT,HS,RC,EC,EC_IO,H4,RC_IO,PROTECT,NOPROTECT,OSCSEN
@@ -14,7 +14,7 @@
 
 
 
-//////// 
+////////
 ////////////////////////////////////////////////////////////////// I/O
 // Discrete I/O Functions: SET_TRIS_x(), OUTPUT_x(), INPUT_x(),
 //                         PORT_B_PULLUPS(), INPUT(),
@@ -80,10 +80,10 @@
 // Control Functions:  RESET_CPU(), SLEEP(), RESTART_CAUSE()
 // Constants returned from RESTART_CAUSE() are:
 
-#define WDT_TIMEOUT      4     
-#define MCLR_FROM_SLEEP  8     
-#define NORMAL_POWER_UP  12    
-#define BROWNOUT_RESTART 14    
+#define WDT_TIMEOUT      4
+#define MCLR_FROM_SLEEP  8
+#define NORMAL_POWER_UP  12
+#define BROWNOUT_RESTART 14
 
 ////////////////////////////////////////////////////////////////// Timer 0
 // Timer 0 (AKA RTCC)Functions: SETUP_COUNTERS() or SETUP_TIMER0(),
@@ -104,9 +104,9 @@
 #define RTCC_DIV_128    6
 #define RTCC_DIV_256    7
 
-#define RTCC_OFF        0x80  
+#define RTCC_OFF        0x80
 
-#define RTCC_8_BIT      0x40  
+#define RTCC_8_BIT      0x40
 
 // Constants used for SETUP_COUNTERS() are the above
 // constants for the 1st param and the following for
@@ -116,8 +116,8 @@
 // Watch Dog Timer Functions: SETUP_WDT() or SETUP_COUNTERS() (see above)
 //                            RESTART_WDT()
 //
-#define WDT_ON      0x100   
-#define WDT_OFF     0       
+#define WDT_ON      0x100
+#define WDT_OFF     0
 
 ////////////////////////////////////////////////////////////////// Timer 1
 // Timer 1 Functions: SETUP_TIMER_1, GET_TIMER1, SET_TIMER1
@@ -169,21 +169,21 @@
 #define CCP_COMPARE_SET_ON_MATCH        8
 #define CCP_COMPARE_CLR_ON_MATCH        9
 #define CCP_COMPARE_INT                 0xA
-#define CCP_COMPARE_INT_AND_TOGGLE      0x2       
+#define CCP_COMPARE_INT_AND_TOGGLE      0x2
 #define CCP_COMPARE_RESET_TIMER         0xB
 #define CCP_PWM                         0xC
 #define CCP_PWM_PLUS_1                  0x1c
 #define CCP_PWM_PLUS_2                  0x2c
 #define CCP_PWM_PLUS_3                  0x3c
-#define CCP_USE_TIMER3                  0x100       
+#define CCP_USE_TIMER3                  0x100
 long CCP_1;
-#byte   CCP_1    =                      0xfbe       
-#byte   CCP_1_LOW=                      0xfbe       
-#byte   CCP_1_HIGH=                     0xfbf       
+#byte   CCP_1    =                      0xfbe
+#byte   CCP_1_LOW=                      0xfbe
+#byte   CCP_1_HIGH=                     0xfbf
 long CCP_2;
-#byte   CCP_2    =                      0xfbb       
-#byte   CCP_2_LOW=                      0xfbb       
-#byte   CCP_2_HIGH=                     0xfbc       
+#byte   CCP_2    =                      0xfbb
+#byte   CCP_2_LOW=                      0xfbb
+#byte   CCP_2_HIGH=                     0xfbc
 ////////////////////////////////////////////////////////////////// PSP
 // PSP Functions: SETUP_PSP, PSP_INPUT_FULL(), PSP_OUTPUT_FULL(),
 //                PSP_OVERFLOW(), INPUT_D(), OUTPUT_D()
@@ -192,7 +192,7 @@ long CCP_2;
 #define PSP_ENABLED                     0x10
 #define PSP_DISABLED                    0
 
-#byte  PSP_DATA=    0xF83               
+#byte  PSP_DATA=    0xF83
 
 ////////////////////////////////////////////////////////////////// SPI
 // SPI Functions: SETUP_SPI, SPI_WRITE, SPI_READ, SPI_DATA_IN
@@ -238,30 +238,30 @@ long CCP_2;
 
 // Constants used in SETUP_ADC_PORTS() are:
 #define NO_ANALOGS                           7    // None
-#define ALL_ANALOG                           0    // A0 A1 A2 A3 A5 E0 E1 E2 Ref=Vdd 
-#define AN0_AN1_AN2_AN4_AN5_AN6_AN7_VSS_VREF 1    // A0 A1 A2 A5 E0 E1 E2 Ref=A3     
-#define AN0_AN1_AN2_AN3_AN4                  2    // A0 A1 A2 A3 A5 Ref=Vdd          
-#define AN0_AN1_AN2_AN4_VSS_VREF             3    // A0 A1 A2 A5 Ref=A3              
+#define ALL_ANALOG                           0    // A0 A1 A2 A3 A5 E0 E1 E2 Ref=Vdd
+#define AN0_AN1_AN2_AN4_AN5_AN6_AN7_VSS_VREF 1    // A0 A1 A2 A5 E0 E1 E2 Ref=A3
+#define AN0_AN1_AN2_AN3_AN4                  2    // A0 A1 A2 A3 A5 Ref=Vdd
+#define AN0_AN1_AN2_AN4_VSS_VREF             3    // A0 A1 A2 A5 Ref=A3
 #define AN0_AN1_AN3                          4    // A0 A1 A3 Ref=Vdd
 #define AN0_AN1_VSS_VREF                     5    // A0 A1 Ref=A3
-#define AN0_AN1_AN4_AN5_AN6_AN7_VREF_VREF 0x08    // A0 A1 A5 E0 E1 E2 Ref=A2,A3     
-#define AN0_AN1_AN2_AN3_AN4_AN5           0x09    // A0 A1 A2 A3 A5 E0 Ref=Vdd       
-#define AN0_AN1_AN2_AN4_AN5_VSS_VREF      0x0A    // A0 A1 A2 A5 E0 Ref=A3           
-#define AN0_AN1_AN4_AN5_VREF_VREF         0x0B    // A0 A1 A5 E0 Ref=A2,A3           
-#define AN0_AN1_AN4_VREF_VREF             0x0C    // A0 A1 A5 Ref=A2,A3              
+#define AN0_AN1_AN4_AN5_AN6_AN7_VREF_VREF 0x08    // A0 A1 A5 E0 E1 E2 Ref=A2,A3
+#define AN0_AN1_AN2_AN3_AN4_AN5           0x09    // A0 A1 A2 A3 A5 E0 Ref=Vdd
+#define AN0_AN1_AN2_AN4_AN5_VSS_VREF      0x0A    // A0 A1 A2 A5 E0 Ref=A3
+#define AN0_AN1_AN4_AN5_VREF_VREF         0x0B    // A0 A1 A5 E0 Ref=A2,A3
+#define AN0_AN1_AN4_VREF_VREF             0x0C    // A0 A1 A5 Ref=A2,A3
 #define AN0_AN1_VREF_VREF                 0x0D    // A0 A1 Ref=A2,A3
 #define AN0                               0x0E    // A0
 #define AN0_VREF_VREF                     0x0F    // A0 Ref=A2,A3
 #define ANALOG_RA3_REF         0x1         //!old only provided for compatibility
-#define A_ANALOG               0x2         //!old only provided for compatibility  
-#define A_ANALOG_RA3_REF       0x3         //!old only provided for compatibility  
+#define A_ANALOG               0x2         //!old only provided for compatibility
+#define A_ANALOG_RA3_REF       0x3         //!old only provided for compatibility
 #define RA0_RA1_RA3_ANALOG     0x4         //!old only provided for compatibility
 #define RA0_RA1_ANALOG_RA3_REF 0x5         //!old only provided for compatibility
 #define ANALOG_RA3_RA2_REF              0x8   //!old only provided for compatibility
-#define ANALOG_NOT_RE1_RE2              0x9   //!old only provided for compatibility  
-#define ANALOG_NOT_RE1_RE2_REF_RA3      0xA   //!old only provided for compatibility  
-#define ANALOG_NOT_RE1_RE2_REF_RA3_RA2  0xB   //!old only provided for compatibility  
-#define A_ANALOG_RA3_RA2_REF            0xC   //!old only provided for compatibility  
+#define ANALOG_NOT_RE1_RE2              0x9   //!old only provided for compatibility
+#define ANALOG_NOT_RE1_RE2_REF_RA3      0xA   //!old only provided for compatibility
+#define ANALOG_NOT_RE1_RE2_REF_RA3_RA2  0xB   //!old only provided for compatibility
+#define A_ANALOG_RA3_RA2_REF            0xC   //!old only provided for compatibility
 #define RA0_RA1_ANALOG_RA3_RA2_REF      0xD   //!old only provided for compatibility
 #define RA0_ANALOG                      0xE   //!old only provided for compatibility
 #define RA0_ANALOG_RA3_RA2_REF          0xF   //!old only provided for compatibility

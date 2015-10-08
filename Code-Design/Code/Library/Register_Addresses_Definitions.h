@@ -1,35 +1,35 @@
-/* 
+/*
  * Register_Addresses_Definitions.h
- * 
+ *
  * Register addresses
  * 	The addresses are all defined as:
  * 		#define REGISTER_<name-of-register> <hex-of-address>
- * 
+ *
  * Notes:
  * 	1: This is not a physical register.
  * 	2: Unimplemented registers are read as ‘0’.
  * 	3: This register is not available on 28-pin devices.
- * 
+ *
  */
 
 #define REGISTER_TOSU 0xFFF               // Comments needed
 #define REGISTER_TOSH 0xFFE               // Comments needed
 #define REGISTER_TOSL 0xFFD               // Comments needed
-                                             
+
 #define REGISTER_STKPTR 0xFFC             // Comments needed
-                                             
+
 #define REGISTER_PCLATU 0xFFB             // Comments needed
 #define REGISTER_PCLATH 0xFFA             // Comments needed
 #define REGISTER_PCL 0xFF9                // Comments needed
-                                            
+
 #define REGISTER_TBLPTRU 0xFF8            // Comments needed
 #define REGISTER_TBLPTRH 0xFF7            // Comments needed
 #define REGISTER_TBLPTRL 0xFF6            // Comments needed
 #define REGISTER_TABLAT 0xFF5             // Comments needed
-                                             
+
 #define REGISTER_PRODH 0xFF4              // Comments needed
 #define REGISTER_PRODL 0xFF3              // Comments needed
-                                             
+
 #define REGISTER_INTCON 0xFF2             // Comments needed
 #define REGISTER_INTCON2 0xFF1            // Comments needed
 #define REGISTER_INTCON3 0xFF0            // Comments needed
@@ -165,7 +165,37 @@
 #define REGISTER_UNIMPLEMENTED_10 0xF97   // 2: Unimplemented registers are read as ‘0’.
 
 #define REGISTER_TRISE 0xF96              // 3: This register is not available on 28-pin devices.
-#define REGISTER_TRISD 0xF95              // Comments needed
+#define REGISTER_TRISD 0xF95              // Comments needed/*
+* Library_18f4520.h
+*
+*
+*/
+
+// Included for compilerkeypadNumber_2
+
+//
+// #include <18f452.h> // Different compiler
+// #include <18f4520.h> // Class compiler
+#include "../library/18f4520.h"
+
+// Set lock bits and fuses
+#include "../library/FusesLockBits.h"
+
+// All register addresses are defined as: #define REGISTER_<name-of-register> <hex-of-address>
+#include "../library/Register_Addresses_Definitions.h"
+
+// Pointers to TRIS PORT and LAT registers
+#include "../library/TRIS_PORT_LAT.h"
+
+// Structures for analog to digital circuits and defins for Q and L
+#include "../library/Analog_To_Digital.h"
+
+// Structures for interrupt curcuits
+#include "../library/Interrupts.h"
+
+// Custom libraries for keypad and LCD connections
+#include "../library/Keypad_Connection.h"
+
 #define REGISTER_TRISC 0xF94              // Comments needed
 #define REGISTER_TRISB 0xF93              // Comments needed
 #define REGISTER_TRISA 0xF92              // Comments needed

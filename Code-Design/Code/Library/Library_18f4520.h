@@ -4,11 +4,11 @@
  *
  */
 
-// Included for compilerkeypadNumber_2 
+// Included for compilerkeypadNumber_2
 
 //
 // #include <18f452.h> // Different compiler
-// #include <18f4520.h> // Class compiler 
+// #include <18f4520.h> // Class compiler
 #include "../library/18f4520.h"
 
 // Set lock bits and fuses
@@ -29,6 +29,3 @@
 // Custom libraries for keypad and LCD connections
 #include "../library/Keypad_Connection.h"
 #include "../library/Modified_LCD.h"
-
-
-

@@ -1,8 +1,8 @@
-/* 
+/*
  * Interrupts.h
- * 
+ *
  * External interrupt control
- * 
+ *
  */
 
 struct INTCON_{
@@ -42,9 +42,9 @@ struct INTCON_3{
 struct INTCON_3 *INTCON3 = REGISTER_INTCON3;
 
 /*
- * 
+ *
  * Peripheral Interrupts Control Registers
- * 
+ *
  */
 
 struct PIE_1{

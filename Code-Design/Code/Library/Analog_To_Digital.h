@@ -1,8 +1,8 @@
 /*
  * Analog_To_Digital.h
- * 
+ *
  * Analog to digital circuit connections
- * 
+ *
  */
 
 #define L *ADRESH
