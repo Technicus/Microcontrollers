@@ -17,7 +17,7 @@
 #define R3 0x7
 
 // Default press
-#define defaultPress ' '
+#define defaultPress '@'
 
 struct KeypadConnection{
    int COL:3;
