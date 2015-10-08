@@ -13,8 +13,8 @@ unsigned int ananlogKeyDifference(unsigned int percentVoltageRange, unsigned int
 unsigned int keypadNumberUpdate(char press, unsigned int keypadNumber_0);
 
 // Global Variables (why global?  Can I do this without global variables?)
-float voltageRange = 6.0;
-float bitRange = 1023.0;
+// float voltageRange = 6.0;
+// float bitRange = 1023.0;
 float Vres = 0;
 Vres = voltageRange/bitRange;
 float Voltage;
